@@ -1,0 +1,152 @@
+@charset "UTF-8";
+html {
+  /* 文字サイズ */
+  font-size: 100%;
+}
+body {
+  /* 文字色指定 */
+  color: #383e45;
+  font-size: 0.9rem;
+}
+a {
+  /* 文字の装飾 */
+  text-decoration: none;
+}
+img {
+  /* 幅の最大値の指定 */
+  max-width: 100%;
+}
+li {
+  /* noneでliの先頭の点をとれる */
+  list-style: none;
+}
+.site-title {
+  width: 130px;
+  /* 行の高さを指定 */
+  line-height: 1px;
+  padding: 10px 0;
+}
+.site-title a {
+  /* 横に並べる＋幅と高さを指定。ブロック要素ボックスを生成するが、前後に改行しないので
+inlineと同じように横に並びます。またinlineと違って、widthプロパティとheightプロパティで幅と高さを指定できる */
+  display: inline-block;
+  font-size: 2rem;
+  /* 文字や要素を左右寄席または中央寄せできる */
+  text-align: center;
+  /* 上の幅 */
+  margin-top: -25px;
+  /* 下の幅 */
+  margin-bottom: 60px;
+  /* 要素の底辺に表示する境界線の色、種類、太さを一括で指定する */
+  border-bottom: solid 1px #383e45;
+}
+.section-title {
+  font-size: 32px;
+  /* 文字に下線をひく */
+  text-decoration: underline;
+}
+
+#header-text {
+  font-size: 16px;
+  margin-top: -80px;
+  text-decoration: solid;
+}
+
+.content-title {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+/* ヘッダー */
+#header {
+  display: flex;
+  /* フレックスした要素を横並びのどこに配置するか指定 */
+  justify-content: space-between;
+  /* フレックスしたした要素を縦並びのどこに配置するか指定 */
+  align-items: center;
+  margin: 0 auto;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+#header li {
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+#header li a :hover {
+  /* 要素の不透明度を設定 */
+  opacity: 0.7;
+}
+/* メインビジュアル */
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920%;
+  height: 600px;
+  margin-top: -80px;
+  /* 画像や動画をどんな大きさでも表示領域にうまくフィットする */
+  object-fit: cover;
+}
+/* About */
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+#about .text {
+  text-align: left;
+}
+/* bicycle */
+#bicycle ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bicycle li {
+  width: 32%;
+}
+/* footer */
+#footer {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
+/* SP */
+@media screen and (max-width: 600px) {
+  /* メインビジュアル */
+  #mainvisual img {
+    height: calc(100vh - 60px);
+    text-align: center;
+  }
+
+  /* About */
+  #about .content {
+    flex-direction: column;
+  }
+  #about img {
+    margin-right: 0;
+  }
+
+  #bicycle li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

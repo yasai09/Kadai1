@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 言語設定 -->
+<html lang="ja">
+  <head>
+    <!-- meta:検索エンジンやブラウザに対してwebページの情報を伝える。UTF―8:文字コード指定 -->
+    <meta charset="UTF-8" />
+    <!-- webタブに表示されるタイトル -->
+    <title>Profile</title>
+    <!-- ページの表示領域の指定。スマホで見た時ページが小さく反映されたりはみ出したりしないようにする -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="header" class="wrapper">
+      <h1 class="site-title">
+        <a href="index.html"><img src="/imges/logo.svg" alt="Profile" /></a>
+      </h1>
+      <nav>
+        <div id="header-text">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="bicycle">Bicycle</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- メイン -->
+    <main>
+      <div id="mainvisual">
+        <img src="/imges/mainvisual.jpg" alt="テキストテキストテキスト" />
+      </div>
+      <!-- セクション１（一つの区切り、一グループ） -->
+      <section id="about" class="wrapper">
+        <h2 class="section-title">About</h2>
+        <div class="content">
+          <img src="/imges/about.jpg" alt="テキストテキストテキスト" />
+          <div class="text">
+            <h3 class="content-title">KAKERU MIYAICHI</h3>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキスト<br />
+              テキストテキストテキストテキストテキストテキストテキスト<br />
+              テキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- セクション2（一つの区切り、一グループ） -->
+      <section id="bicycle" class="wrapper">
+        <h2 class="section-title">Bicycle</h2>
+        <ul>
+          <li class="box">
+            <img src="/imges/bicycle1.jpg" alt="テキストテキストテキスト" />
+            <h3 class="content-title">タイトルタイトル</h3>
+            <p>テキストテキストテキスト</p>
+          </li>
+          <li class="box">
+            <img src="/imges/bicycle2.jpg" alt="テキストテキストテキスト" />
+            <h3 class="content-title">タイトルタイトル</h3>
+            <p>テキストテキストテキスト</p>
+          </li>
+          <li class="box">
+            <img src="/imges/bicycle3.jpg" alt="テキストテキストテキスト" />
+            <h3 class="content-title">タイトルタイトル</h3>
+            <p>テキストテキストテキスト</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- メイン -->
+    <!-- フッター -->
+    <footer id="footer">
+      <p>&copy; 2020 Profile</p>
+    </footer>
+    <!-- フッター -->
+  </body>
+</html>
