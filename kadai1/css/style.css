@@ -41,9 +41,10 @@ inlineと同じように横に並びます。またinlineと違って、widthプ
   border-bottom: solid 1px #383e45;
 }
 .section-title {
-  font-size: 32px;
+ font-size: 32px;
+  display: inline-block;
   /* 文字に下線をひく */
-  text-decoration: underline;
+  border-bottom: 1px solid;
 }
 
 #header-text {
