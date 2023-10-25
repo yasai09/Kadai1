@@ -7,6 +7,7 @@ body {
   /* 文字色指定 */
   color: #383e45;
   font-size: 0.9rem;
+  font-family: "メイリオ", "Meiryo", sans-serif;
 }
 a {
   /* 文字の装飾 */
@@ -41,22 +42,38 @@ inlineと同じように横に並びます。またinlineと違って、widthプ
   border-bottom: solid 1px #383e45;
 }
 .section-title {
- font-size: 32px;
+  font-size: 36px;
   display: inline-block;
   /* 文字に下線をひく */
+  /* text-decoration: underline; */
+  font-weight: bold;
   border-bottom: 1px solid;
+  padding-bottom: 10px;
+  margin: 45px auto;
 }
 
 #header-text {
   font-size: 16px;
+  padding: 30px;
   margin-top: -80px;
   text-decoration: solid;
 }
 
 .content-title {
-  font-size: 1rem;
+  font-size: 18px;
   margin: 10px 0;
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bold;
 }
+.content-title2 {
+  font-size: 18px;
+  margin: 20px 0;
+  padding-top: 20px;
+  text-align: left;
+  font-weight: bold;
+}
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto 100px auto;
@@ -70,11 +87,14 @@ inlineと同じように横に並びます。またinlineと違って、widthプ
   justify-content: space-between;
   /* フレックスしたした要素を縦並びのどこに配置するか指定 */
   align-items: center;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 #header ul {
+  font-size: 16px;
   display: flex;
   padding: 10px 0;
+  margin-left: 100px;
+  margin-right: -25px;
 }
 
 #header li {
@@ -104,18 +124,30 @@ inlineと同じように横に並びます。またinlineと違って、widthプ
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 #about img {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   margin-right: 30px;
+  margin-top: 10px;
 }
 #about .text {
   text-align: left;
+  font-size: 16px;
 }
+#about .text .content-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 /* bicycle */
+#bicycle .box {
+  margin-top: 15px;
+}
 #bicycle ul {
   display: flex;
   justify-content: space-between;
@@ -123,11 +155,20 @@ inlineと同じように横に並びます。またinlineと違って、widthプ
 
 #bicycle li {
   width: 32%;
+  height: 35%;
+  text-align: center;
+  margin-top: 3px;
+}
+#bicycle li p {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 2px;
 }
 /* footer */
-#footer {
-  font-size: 0.5rem;
+#footer p {
+  font-size: 9px;
   padding: 10px 0;
+  margin-bottom: 3px;
   text-align: center;
 }
 /* SP */
